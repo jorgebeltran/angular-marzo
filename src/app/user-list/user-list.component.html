@@ -8,9 +8,9 @@
   </div>
   <div class="clean"></div>
 </div>
-<div>
-  <div class="detail-user">{{ test.name }}</div>
-  <div class="detail-user">{{ test.lastname }}</div>
+<div *ngFor="let usuario of userlist">
+  <div class="detail-user">{{ usuario.name }}</div>
+  <div class="detail-user">{{ usuario.lastname }}</div>
   <div class="detail-user">
     <button>Edit</button>
     <button>View</button>
